@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: DEIN-GITHUB-NAME/DEIN-REPO   # hier anpassen, z. B. noah-kocherhans/portfolio
+  repo: Kroko05/portfolio
   branch: main
 media_folder: images/projects
 public_folder: /images/projects
