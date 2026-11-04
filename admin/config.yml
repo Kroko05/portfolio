@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: DEIN-GITHUB-NAME/DEIN-REPO   # hier anpassen, z. B. noah-kocherhans/portfolio
+  branch: main
+media_folder: images/projects
+public_folder: /images/projects
+collections:
+  - name: projekte
+    label: Projekte
+    files:
+      - label: Projekte
+        name: projects
+        file: projects.json
+        fields:
+          - label: Projekte (maximal 6 werden angezeigt)
+            name: projects
+            widget: list
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Kategorie, name: category, widget: string }
+              - { label: Bild, name: image, widget: image, required: false }
+              - { label: Link, name: link, widget: string, required: false }

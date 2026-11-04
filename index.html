@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Noah Kocherhans – Portfolio</title>
+<meta name="description" content="Noah Kocherhans – Content Creator und Digital Business Spezialist.">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&family=Instrument+Sans:wght@300;400;700&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--l3:url(images/hero.jpg);--p:url(images/portrait.jpg);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:#050505;color:#ececec;font:400 16px/1.6 Manrope,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.c{display:none}.c.on{display:block}
+.sw{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;display:flex;gap:4px;padding:5px;border-radius:99px;background:rgba(20,20,20,.82);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);max-width:calc(100vw - 24px)}
+.sw button{font:500 13px Manrope,sans-serif;color:#aaa;background:none;border:0;padding:9px 16px;border-radius:99px;cursor:pointer;transition:.3s;white-space:nowrap}
+.sw button.on{background:#f2f2f2;color:#050505}.sw button:focus-visible,a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.bg{background-size:cover;background-position:center}
+.m{opacity:0;transform:translateY(44px);transition:opacity 1s,transform 1.2s cubic-bezier(.2,.7,.1,1)}.m.in{opacity:1;transform:none}
+.ln{display:block;overflow:hidden;padding-bottom:.06em}.ln>span{display:block;transform:translateY(108%);animation:up 1.1s cubic-bezier(.2,.7,.1,1) forwards;animation-delay:calc(var(--i)*.13s + .15s)}
+@keyframes up{to{transform:none}}@keyframes kb{to{transform:scale(1.12) translate(-1.5%,-1%)}}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:14px}.nav div{display:flex;gap:28px}.nav a{opacity:.75;transition:.3s}.nav a:hover{opacity:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{padding:7px 15px;border:1px solid rgba(255,255,255,.18);border-radius:99px;font-size:14px;transition:.3s}
+.tl{list-style:none;padding:0}.tl li{position:relative}.tl b{font-weight:500}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.m{opacity:1;transform:none}.ln>span{transform:none}}
+
+/* A: Amber – Bühne */
+#a{--ac:#ffb020;--ac2:#ff6a1a}
+#a h1,#a h2,#a h3{font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:900;text-transform:uppercase;line-height:.88;letter-spacing:-.01em}
+#a .hero{position:relative;height:100svh;min-height:620px;overflow:hidden;padding:24px 5vw 7vh;display:flex;flex-direction:column;justify-content:space-between}
+#a .hero .bg{position:absolute;inset:-2%;background-image:var(--l3);background-position:62% 50%;filter:brightness(.5) saturate(.9);animation:kb 26s ease-in-out infinite alternate}
+#a .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(70% 55% at 12% 100%,rgba(255,150,30,.32),transparent 70%),linear-gradient(rgba(5,5,5,.5),transparent 24%,transparent 60%,rgba(5,5,5,.92))}
+#a .hero>*:not(.bg){position:relative;z-index:2}
+#a .hero>.me{position:absolute;right:6vw;bottom:0;width:min(34vw,520px);aspect-ratio:3/4;z-index:1;border-radius:4px 4px 0 0;background:var(--p) 50% 16%/cover;box-shadow:0 0 130px -20px rgba(255,176,32,.5),0 0 0 1px rgba(255,176,32,.25);animation:rise 1.4s cubic-bezier(.2,.7,.1,1) .5s both}@keyframes rise{from{opacity:0;transform:translateY(40px)}}
+#a .nav .logo{font:900 22px 'Big Shoulders Display';letter-spacing:.02em}
+#a h1{font-size:clamp(40px,7.4vw,150px)}
+#a .sub{display:flex;justify-content:flex-start;max-width:56vw;align-items:end;gap:24px;margin-top:24px;flex-wrap:wrap}#a .sub p{max-width:34ch;color:#cfcfcf}
+#a .sec{padding:14vh 5vw 0}
+#a .hd{display:flex;justify-content:space-between;align-items:end;margin-bottom:5vh;gap:16px}#a h2{font-size:clamp(48px,8vw,120px)}
+#a .btn{padding:13px 26px;border-radius:99px;border:1px solid var(--ac);color:var(--ac);transition:.4s}#a .btn:hover{background:var(--ac);color:#050505;box-shadow:0 0 40px rgba(255,176,32,.45)}
+#a .proj{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+#a .card{position:relative;overflow:hidden;border-radius:4px;display:block;background:#0e0e0e;border:1px solid rgba(255,255,255,.09);transition:border-color .5s,opacity 1s,transform 1.2s cubic-bezier(.2,.7,.1,1)}
+#a .card .bg{position:absolute;inset:0;transition:transform 1.2s cubic-bezier(.2,.7,.1,1)}
+#a .card:hover .bg{transform:scale(1.08)}#a .card:hover{border-color:var(--ac)}
+#a .card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.85))}
+#a .cap{position:absolute;left:22px;right:22px;bottom:18px;z-index:2}#a .cap h3{font-size:clamp(30px,3.4vw,50px)}#a .cap small{color:#bbb;font-size:14px}
+#a .cap:before{content:"";display:block;height:2px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));margin-bottom:12px;transition:width .7s cubic-bezier(.2,.7,.1,1)}#a .card:hover .cap:before{width:100%}
+#a .card:nth-child(1){grid-column:1/8;aspect-ratio:4/3}#a .card:nth-child(2){grid-column:8/13;aspect-ratio:3/4;margin-top:14vh}
+#a .card:nth-child(3){grid-column:1/6;aspect-ratio:3/4}#a .card:nth-child(4){grid-column:6/13;aspect-ratio:4/3;margin-top:12vh}
+#a .card:nth-child(5){grid-column:1/8;aspect-ratio:16/10}#a .card:nth-child(6){grid-column:8/13;aspect-ratio:1;margin-top:9vh}
+#a .card i{position:absolute;left:20px;top:6px;z-index:2;font:900 clamp(70px,9vw,150px)/1 'Big Shoulders Display',Impact,sans-serif;font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.28);transition:.6s}
+#a .card:hover i{-webkit-text-stroke-color:var(--ac);transform:translateX(12px)}
+#a .tag{position:absolute;right:18px;top:20px;z-index:2;font-size:12px;padding:5px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#aaa}
+#a .mq{overflow:hidden;white-space:nowrap;padding-top:6vh}
+#a .mq div{display:inline-block;font:900 clamp(56px,8vw,150px)/1 'Big Shoulders Display',Impact,sans-serif;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px var(--ac);animation:mq 50s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+#a .hero .bg{translate:0 var(--py,0px)}#a .ph{translate:0 var(--pp,0px);outline:1px solid var(--ac);outline-offset:14px}
+.cur{position:fixed;left:0;top:0;width:440px;height:440px;margin:-220px 0 0 -220px;border-radius:50%;pointer-events:none;z-index:40;background:radial-gradient(circle,rgba(255,176,32,.17),transparent 65%);mix-blend-mode:screen;opacity:0;transition:opacity .6s}@media (pointer:coarse){.cur{display:none}}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#a .ab{display:grid;grid-template-columns:5fr 7fr;gap:6vw;align-items:start}
+#a .ph{aspect-ratio:4/5;border-radius:4px;box-shadow:0 0 140px -30px rgba(255,176,32,.4)}
+#a .ab p{font-size:clamp(18px,1.7vw,24px);line-height:1.5;max-width:46ch;margin:3vh 0 4vh}
+#a .tl{margin-top:5vh;border-left:1px solid;border-image:linear-gradient(var(--ac),transparent) 1;padding-left:28px}
+#a .tl li{padding:8px 0 18px}#a .tl li:before{content:"";position:absolute;left:-33px;top:19px;width:9px;height:9px;border-radius:50%;background:var(--ac);box-shadow:0 0 14px var(--ac)}
+#a .chips span:hover{border-color:var(--ac);color:var(--ac)}
+#a .cc{display:grid;grid-template-columns:7fr 5fr;gap:6vw;align-items:center;margin-top:14vh}#a .cc h3{font-size:clamp(36px,4.5vw,64px);margin-bottom:4vh}
+#a .ic{display:flex;flex-wrap:wrap;gap:12px}#a .ic div{text-align:center;font-size:11px;color:#999;width:62px}#a .ph3{font:900 28px 'Big Shoulders Display',Impact,sans-serif;text-transform:uppercase;margin:5vh 0 16px}
+#a .ic b{display:grid;place-items:center;width:56px;height:56px;margin-bottom:6px;border-radius:13px;border:2px solid var(--k);background:var(--bk);color:var(--k);font:700 21px/1 Manrope,system-ui,sans-serif;letter-spacing:-.04em;transition:transform .5s cubic-bezier(.2,.7,.1,1),box-shadow .5s}
+#a .ic div:hover b{transform:translateY(-5px);box-shadow:0 10px 28px -6px var(--k)}
+#a .ph2{aspect-ratio:4/5;border-radius:4px;background-image:var(--l2);background-size:280%;background-position:42% 69%;box-shadow:0 0 120px -30px rgba(255,176,32,.4)}
+#a .ft{padding:18vh 5vw 14vh;text-align:center}#a .ft h2{font-size:clamp(90px,24vw,420px);background:linear-gradient(180deg,var(--ac),var(--ac2) 85%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 50px rgba(255,140,30,.25))}
+#a .ft a{display:inline-block;margin-top:3vh;font-size:20px;border-bottom:1px solid var(--ac)}
+
+#a h1{font-size:clamp(46px,9vw,170px)}#a .ol{color:transparent;-webkit-text-stroke:2px var(--ac)}#a .am{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+#a .hero .bg.lit{filter:brightness(1.03) saturate(1.15);-webkit-mask-image:radial-gradient(circle 250px at var(--mx,62%) var(--my,72%),#000 0,rgba(0,0,0,.7) 45%,transparent 100%);mask-image:radial-gradient(circle 250px at var(--mx,62%) var(--my,72%),#000 0,rgba(0,0,0,.7) 45%,transparent 100%)}
+#a .ph{position:relative}#a .orb{position:absolute;right:-56px;bottom:-56px;width:150px;height:150px;color:var(--ac);animation:spin 22s linear infinite}#a .orb text{font:700 13px Manrope,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;fill:currentColor}@keyframes spin{to{transform:rotate(360deg)}}
+.pg{position:fixed;top:0;left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(var(--s,0));background:linear-gradient(90deg,#ffb020,#ff6a1a);z-index:55}
+@media (max-width:860px){#a .orb{right:-8px;bottom:-70px;width:120px;height:120px}#a .proj,#a .ab,#a .cc{grid-template-columns:1fr}#a .card{grid-column:1/-1!important;margin-top:0!important;aspect-ratio:4/3!important}#a .ph{outline-offset:8px;margin:0 8px}#a .nav div{gap:16px}#a .hero>.me{width:52vw;top:13vh;bottom:auto;right:5vw}#a .sub{max-width:none}}
+</style></head><body>
+
+<main class="c on" id="a">
+<header class="hero"><div class="bg" role="img" aria-label="Videohintergrund: Bergsee im Herbst"></div><div class="bg lit" aria-hidden="true"></div>
+<nav class="nav"><a class="logo" href="#a">Noah Kocherhans</a><div><a href="#a1">Projekte</a><a href="#a2">Über mich</a><a href="#a3">Kontakt</a></div></nav>
+<div><h1><span class="ln" style="--i:0"><span>Your content</span></span><span class="ln" style="--i:1"><span class="ol">is worth</span></span><span class="ln" style="--i:2"><span class="am">being seen.</span></span></h1>
+<div class="sub"><p>Content Creator und Digital Business Spezialist.</p><a class="btn" href="#a1">Projekte ansehen</a></div></div>
+</header>
+<div class="mq" aria-hidden="true"><div></div></div>
+<section class="sec" id="a1"><div class="hd"><h2>Ausgewählte<br>Projekte</h2><a class="btn" href="#a1">Mehr Projekte</a></div><div class="proj"></div></section>
+<section class="sec" id="a2"><div class="ab"><div class="ph bg m" style="background-image:var(--p);background-position:50% 18%" role="img" aria-label="Porträt"><svg class="orb" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="cp" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#cp" textLength="480" lengthAdjust="spacing">Foto · Video · Social · Branding · Strategie · </textPath></text><circle cx="100" cy="100" r="6" fill="currentColor"/></svg></div><div><h2>Über mich</h2><p>Ich entwickle Content und digitale Geschäftsideen, die zusammenpassen: von der ersten Idee über Video und Foto bis zur Strategie dahinter.</p><div class="chips"></div><ul class="tl"></ul><h3 class="ph3">Programme</h3><div class="ic"></div></div></div></section>
+<footer class="ft" id="a3"><h2>Kontakt</h2><a href="mailto:noah.kocherhans@bluewin.ch">noah.kocherhans@bluewin.ch</a></footer>
+</main>
+
+<div class="pg"></div><div class="cur"></div>
+<script>
+const P=[["Projekttitel","Social-Media-Content"],["Projekttitel","Videoproduktion"],["Projekttitel","Branding"],["Projekttitel","Fotografie"],["Projekttitel","Digitale Strategie"],["Projekttitel","Webdesign"]];
+const POS=["50% 30%","50% 75%","30% 55%","70% 40%","50% 92%","50% 8%"];
+const SK=["Videoschnitt","Fotografie","Social Media","Branding","Webdesign","Strategie"];
+const TL=["Ausbildung Mediamatiker","Mediamatiker EFZ","Digital Media Manager","Head of Digital Business Development"];
+const XY=[[30,70],[70,25],[40,40],[75,70],[25,30],[60,55]];
+function render(list,obs){document.querySelectorAll('.proj').forEach(e=>{e.innerHTML=list.slice(0,6).map((p,i)=>{const bg=p[2]?`background:url('${p[2]}') center/cover`:`background:radial-gradient(65% 65% at ${XY[i%6][0]}% ${XY[i%6][1]}%,rgba(255,176,32,.2),transparent 70%),repeating-linear-gradient(135deg,#131313 0 14px,#0d0d0d 14px 28px)`;return `<a class="card m" href="${p[3]||'#'}"><div class="bg" style="${bg}"></div><i>0${i+1}</i>${p[2]?'':'<span class="tag">Platzhalter</span>'}<div class="cap"><h3>${p[0]}</h3><small>${p[1]}</small></div></a>`}).join('');if(obs)e.querySelectorAll('.m').forEach(x=>io.observe(x))})}
+render(P,false);
+const S='Foto · Video · Content Creation · Social Media · Branding · Strategie · Grafik · ';document.querySelector('.mq div').textContent=S+S;
+const cur=document.querySelector('.cur');let cx=0,cy=0,tx=0,ty=0;addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;cur.style.opacity=1});
+(function f(){cx+=(tx-cx)*.12;cy+=(ty-cy)*.12;cur.style.left=cx+'px';cur.style.top=cy+'px';requestAnimationFrame(f)})();
+const hero=document.querySelector('#a .hero'),ph=document.querySelector('#a .ph');
+hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--mx',e.clientX-r.left+'px');hero.style.setProperty('--my',e.clientY-r.top+'px')});
+addEventListener('scroll',()=>{document.documentElement.style.setProperty('--s',scrollY/Math.max(1,document.body.scrollHeight-innerHeight));hero.style.setProperty('--py',Math.min(scrollY,innerHeight)*.22+'px');const r=ph.getBoundingClientRect();ph.style.setProperty('--pp',(innerHeight/2-(r.top+r.height/2))*.06+'px')},{passive:true});
+document.querySelectorAll('.chips').forEach(e=>e.innerHTML=SK.map(s=>`<span>${s}</span>`).join(''));
+document.querySelectorAll('.tl').forEach(e=>e.innerHTML=TL.map(s=>`<li><b>${s}</b></li>`).join(''));
+const AD=[["Ai","Illustrator","#FF9A00","#330000"],["Id","InDesign","#FF3366","#49021F"],["Lr","Lightroom","#ADD5EC","#001E36"],["Ps","Photoshop","#31A8FF","#001E36"],["Me","Media Encoder","#9999FF","#00005B"],["Pr","Premiere Pro","#9999FF","#00005B"],["Ae","After Effects","#9999FF","#00005B"]];
+document.querySelectorAll('.ic').forEach(e=>e.innerHTML=AD.map(a=>`<div><b style="--k:${a[2]};--bk:${a[3]}">${a[0]}</b>${a[1]}</div>`).join(''));
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.m').forEach(e=>io.observe(e));
+document.querySelectorAll('.sw button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.sw button,.c').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.getElementById(b.dataset.c).classList.add('on');scrollTo({top:0,behavior:'instant'})});
+document.querySelectorAll('#c .t').forEach(t=>t.addEventListener('pointermove',e=>{const r=t.getBoundingClientRect();t.style.setProperty('--x',e.clientX-r.left+'px');t.style.setProperty('--y',e.clientY-r.top+'px')}));
+document.querySelectorAll('a[href="#"]').forEach(a=>a.onclick=e=>e.preventDefault());
+fetch('projects.json').then(r=>r.json()).then(d=>{if(d.projects&&d.projects.length)render(d.projects.map(p=>[p.title,p.category,p.image,p.link]),true)}).catch(()=>{});
+</script></body></html>

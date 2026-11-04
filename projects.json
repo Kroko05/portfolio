@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Projekttitel",
+      "category": "Social-Media-Content",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Projekttitel",
+      "category": "Videoproduktion",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Projekttitel",
+      "category": "Branding",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Projekttitel",
+      "category": "Fotografie",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Projekttitel",
+      "category": "Digitale Strategie",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Projekttitel",
+      "category": "Webdesign",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
