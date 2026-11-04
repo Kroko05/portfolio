@@ -2,6 +2,8 @@ backend:
   name: github
   repo: Kroko05/portfolio
   branch: main
+  base_url: https://portfolio-oauth.noah-kocherhans.workers.dev
+  auth_endpoint: auth
 media_folder: images/projects
 public_folder: /images/projects
 collections:
